@@ -1,0 +1,1 @@
+Add PATH_TO_FOLDER to PYTHONPATH so that it can find small module crypty.
