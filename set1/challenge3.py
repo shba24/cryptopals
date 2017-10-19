@@ -1,9 +1,5 @@
 #!/usr/bin/python
 
-## Importing crypty python library
-import sys
-sys.path.insert(0,"..")
-
 """
 Main Code
 """

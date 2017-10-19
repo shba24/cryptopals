@@ -1,7 +1,4 @@
-## Importing crypty python library
-import sys
-
-sys.path.insert(0,"..")
+#!/usr/bin/python
 
 """
 Main Code
@@ -22,7 +19,7 @@ def insecure_compare(str1, str2):
 def solve():
   filename = "test.txt"
   key = crypty.generate_key()
-  correct_hash = hmac.hmac(key.decode("hex"),open(filename,'r').read()).decode("hex")
+  correct_hash = hmac(key.decode("hex"),open(filename,'r').read()).decode("hex")
   print "[*] Key : %s" % (correct_hash.encode("hex"))
   guessed_hash = ["\x00"]*20
   for i in xrange(20):
